@@ -8,4 +8,11 @@ function alphabetPosition(character) {
   if (code > 64 && code < 91) result += code - 64;
   return parseInt(result) + multiplier;
 }
-module.exports = { alphabetPosition };
+
+function range(start, end) {
+  return Array(end - start + 1)
+    .fill()
+    .map((_, idx) => start + idx);
+}
+
+module.exports = { alphabetPosition, range };
