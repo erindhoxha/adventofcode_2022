@@ -11,9 +11,9 @@ entries.map((entry: string, index: number) => {
   let elf2Start = parseInt(entryArr[1].split('-')[0]);
   let elf2Finish = parseInt(entryArr[1].split('-')[1]);
 
-  if (elf1Start <= elf2Start && elf1Finish >= elf2Finish) {
+  if (elf1Start <= elf2Start && elf1Finish >= elf2Start) {
     points++;
-  } else if (elf2Start <= elf1Start && elf2Finish >= elf1Finish) {
+  } else if (elf2Start <= elf1Start && elf2Finish >= elf1Start) {
     points++;
   }
 });
