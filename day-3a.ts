@@ -17,3 +17,5 @@ entries.map((entry: string) => {
 });
 
 console.table({ Points: points });
+
+export {};
