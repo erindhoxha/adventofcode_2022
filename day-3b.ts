@@ -29,7 +29,6 @@ result.map((entry: string) => {
 
   arr1.some((r) => {
     if (arr2.includes(r) && arr3.includes(r)) {
-      console.log(r);
       points += alphabetPosition(r);
       return true;
     }
